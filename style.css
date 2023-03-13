@@ -96,7 +96,7 @@ header h3{
     align-items: center;
     border: transparent;
     position: absolute;
-    left: 466px;
+    right: 0px;
     border: 1px solid orange;
     border-radius: 100px;
     background-color: orange;
@@ -459,7 +459,7 @@ footer p{
     .container-span img{
         cursor: pointer;
         position: absolute;
-        right: 210px;
+        left: 10px;
         width: 15px;
     }
     
@@ -495,7 +495,7 @@ footer p{
         align-items: center;
         border: transparent;
         position: absolute;
-        left: 189px;
+        right: 0px;
         border: 1px solid orange;
         border-radius: 100px;
         background-color: orange;
