@@ -1,0 +1,798 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
+
+header{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(lamp.jpg);
+    background-position: center center;
+    background-size: 100%;
+    gap: 80px;
+    padding-top: 30px;
+}
+
+header h3{
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+.container{
+    width: 40%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+}
+
+.container-span{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: relative;
+    border-radius: 100px;
+}
+
+.container-span img{
+    cursor: pointer;
+    position: absolute;
+    right: 500px;
+}
+
+
+
+.container-span input{
+    width: 100%;
+    height: 40px;
+    padding-left: 55px;
+    padding-right: 100px;
+    outline: none;
+    border: transparent;
+    color: white;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid white;
+
+}
+
+.container-span input:focus{
+    border: 1px solid orange;
+}
+
+
+
+.container-span span{
+    width: 15%;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    position: absolute;
+    left: 466px;
+    border: 1px solid orange;
+    border-radius: 100px;
+    background-color: orange;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+
+}
+
+.container-span span:hover{
+    background-color: green;
+    border: 1px solid white;
+}
+
+
+.header-nav{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.header-nav nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.header-nav nav a{
+    text-decoration: none;
+    color: white;
+    transition: transform 1.0s ease;
+}
+
+.header-nav nav a:hover{
+    transform: scale(1.2);
+    color: orange;
+}
+
+main{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#trending-movies{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    gap: 30px;
+    padding: 30px;
+}
+
+#trending-movies h1{
+    font-size: 70px;
+    font-weight: 100;
+
+
+}
+
+.firstrow-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.firstrow-img img{
+    width: 250px;
+    height: 150px;
+}
+
+.firstrow-img img:hover{
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+.secondrow-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.big-img{
+    width: 540px;
+    height: 350px;
+}
+
+.big-img:hover{
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.small-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.small-img img{
+    width: 243px;
+    height: 160px;
+}
+
+.small-img img:hover{
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+#create-account{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#create-account h1{
+    font-size: 70px;
+    font-weight: 100;
+}
+
+form{
+    width: 70%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: whitesmoke;
+    gap: 30px;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+
+.input-group input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: transparent;
+    border-bottom: 1px solid black;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+
+.input-group input:focus{
+    border-bottom: 1px solid orange;
+}
+
+.login{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.login input{
+    width: 15%;
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: background-color 1.3s ease;
+}
+
+.login input:hover{
+    background-color: orange;
+}
+
+#movie-gallery{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+#movie-gallery h1{
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.movie{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.movie-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.movie-container img{
+    width: 250px;
+    height: 200px;
+}
+
+.movie-container img:hover{
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#map{
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+    position: relative;
+    background-color: whitesmoke;
+}
+
+.bigmap{
+    width: 80%;
+    height: 80%;
+}
+
+.Contact-us{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    top: 50px;
+}
+
+.Contact-us h1{
+    font-size: 70px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Contact-us div{
+    width: 30%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.Contact-us div p{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+footer p{
+    color: white;
+    font-size: 16px;
+}
+
+
+
+/* mobile viev  */
+
+
+@media(max-width:450px){
+
+
+    header{
+        width: 100%;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(lamp.jpg);
+        background-position: center center;
+        background-size: 100%;
+        gap: 10px;
+        padding-top: 30px;
+    }
+    
+    header h3{
+        width: 60%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: white;
+    }
+    
+    .container{
+        width: 60%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    
+    }
+    
+    .container-span{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        position: relative;
+        border-radius: 100px;
+    }
+    
+    .container-span img{
+        cursor: pointer;
+        position: absolute;
+        right: 210px;
+        width: 15px;
+    }
+    
+    
+    
+    .container-span input{
+        width: 100%;
+        height: 30px;
+        padding-left: 30px;
+        padding-right: 50px;
+        outline: none;
+        border: transparent;
+        color: white;
+        background-color: transparent;
+        border-radius: 100px;
+        border: 1px solid white;
+    
+    }
+    
+    .container-span input:focus{
+        border: 1px solid orange;
+    }
+    
+    
+    
+    .container-span span{
+        width: 20%;
+        height: 30px;
+        text-align: center;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: transparent;
+        position: absolute;
+        left: 189px;
+        border: 1px solid orange;
+        border-radius: 100px;
+        background-color: orange;
+        cursor: pointer;
+    
+    }
+    
+    
+    .header-nav{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+    
+    .header-nav nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        
+    }
+    
+    .header-nav nav a{
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        transition: color 1.0s ease;
+    }
+    
+    .header-nav nav a:hover{
+        color: orange;
+    }
+    
+    main{
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    #trending-movies{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+        gap: 30px;
+        padding: 30px;
+    }
+    
+    #trending-movies h1{
+        font-size: 30px;
+        font-weight: 100;
+    
+    
+    }
+    
+    .firstrow-img{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+    }
+    
+    .firstrow-img img{
+        width: 90px;
+        height: 90px;
+    }
+    
+    
+    
+    
+    .secondrow-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .big-img{
+        width: 190px;
+        height: 150px;
+    }
+    
+    .small-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .small-img img{
+        width: 103px;
+        height: 70px;
+    }
+    
+    
+    #create-account{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 40px;
+    }
+    
+    #create-account h1{
+        font-size: 30px;
+        font-weight: 100;
+    }
+    
+    form{
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: whitesmoke;
+        gap: 30px;
+        padding: 30px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    
+    .input-group{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+        
+    }
+    
+    .input-group input{
+        width: 100%;
+        height: 40px;
+        outline: none;
+        border: transparent;
+        border-bottom: 1px solid black;
+        letter-spacing: 1px;
+        background-color: transparent;
+    }
+    
+    .input-group input:focus{
+        border-bottom: 2px solid orange;
+    }
+    
+    .login{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .login input{
+        width: 30%;
+        padding: 7px;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: transparent;
+        border: 1px solid black;
+        transition: background-color 1.3s ease;
+    }
+    
+    .login input:hover{
+        background-color: orange;
+    }
+    
+    #movie-gallery{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+        padding-top: 60px;
+    }
+    
+    #movie-gallery h1{
+        font-size: 30px;
+        font-weight: 100;
+    }
+    
+    .movie{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .movie-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .movie-container img{
+        width: 150px;
+        height: 130px;
+    }
+
+    .movie-container img:hover{
+        border: 1px solid orange;
+    }
+    
+    #map{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 90px;
+        position: relative;
+        background-color: white;
+        margin-top: 80px;
+    }
+    
+    .bigmap{
+        width: 90%;
+        height: 70%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .Contact-us{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        position: absolute;
+        top: 170px;
+    }
+    
+    .Contact-us h1{
+        font-size: 30px;
+        font-weight: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .Contact-us div{
+        width: 70%;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: whitesmoke;
+        border-radius: 10px;
+    }
+    
+    .Contact-us div p{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    
+    footer{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+    
+    footer p{
+        color: white;
+        font-size: 10px;
+    }
+    
+
+}
