@@ -142,6 +142,10 @@ nav{
     color: orange;
 }
 
+nav a span{
+    font-size: 15px;
+}
+
  nav a img{
     display: none;
 }
@@ -531,16 +535,13 @@ footer p{
         padding: 20px;
         background-color: orange;
         gap: 15px;
-        top: 70px;
+        top: 55px;
         z-index: 100;
         transition: 0.5s ease;
         
     }
    
-    nav a span{
-        color: white;
-        font-size: 20px;
-    }
+  
 
 
     .slide{
@@ -571,7 +572,7 @@ footer p{
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
-        font-size: 20px;
+        font-size: 13px;
     }
     
     main{
@@ -585,7 +586,7 @@ footer p{
     }
 
     .adjust{
-        margin-top: 150px;
+        margin-top: 155px;
     }
     
     #trending-movies{
